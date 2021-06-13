@@ -1,6 +1,6 @@
 {
   "name": "eletron-test",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "This is a test application",
   "main": "main.js",
   "scripts": {
@@ -13,24 +13,30 @@
   "build": {
     "appId": "pnksh.test-application",
     "win": {
-      "publish": [{
-        "provider": "github",
-        "owner": "parisnakitakejser",
-        "repo": "electronjs-test",
-        "private": false,
-        "releaseType": "release"
-      }],
-      "target": [{
-        "target": "nsis",
-        "arch": [
-          "x64"
-        ]
-      }]
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "parisnakitakejser",
+          "repo": "electronjs-test",
+          "private": false,
+          "releaseType": "release"
+        }
+      ],
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
     }
   },
   "devDependencies": {
     "electron": "^13.1.2",
-    "electron-builder": "^22.11.7",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
     "electron-updater": "^4.3.9"
   }
 }
