@@ -12,20 +12,20 @@ function createWindow () {
 }
 
 app.whenReady().then(() => {
-    const options = {
-        requestHeaders: {
-            // Any request headers to include here
-            Authorization: 'Basic AUTH_CREDS_VALUE'
-        },
-        provider: 'github',
-        url: 'https://example.com/auto-updates'
-    }
+    // const options = {
+    //     requestHeaders: {
+    //         // Any request headers to include here
+    //         Authorization: 'Basic AUTH_CREDS_VALUE'
+    //     },
+    //     provider: 'github',
+    //     url: 'https://example.com/auto-updates'
+    // }
     
-    if (process.platform === "win32") {
-        autoUpdater = new NsisUpdater(options)
-    }
+    // if (process.platform === "win32") {
+    //     autoUpdater = new NsisUpdater(options)
+    // }
 
-    autoUpdater.checkForUpdatesAndNotify()
+    // autoUpdater.checkForUpdatesAndNotify()
 
   createWindow()
 })
