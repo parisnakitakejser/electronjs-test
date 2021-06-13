@@ -1,6 +1,6 @@
 {
   "name": "eletron-test",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This is a test application",
   "main": "main.js",
   "scripts": {
@@ -16,7 +16,15 @@
       "publish": [{
         "provider": "github",
         "owner": "parisnakitakejser",
-        "repo": "electronjs-test"
+        "repo": "electronjs-test",
+        "private": false,
+        "releaseType": "release"
+      }],
+      "target": [{
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
       }]
     }
   },
