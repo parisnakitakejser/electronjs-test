@@ -1,6 +1,6 @@
 {
   "name": "eletron-test",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "This is a test application",
   "main": "main.js",
   "scripts": {
@@ -27,7 +27,8 @@
           "target": "nsis",
           "arch": [
             "x64"
-          ]
+          ],
+          "verifyUpdateCodeSignature": false
         }
       ]
     }
