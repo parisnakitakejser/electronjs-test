@@ -1,4 +1,4 @@
-const { NsisUpdater } = require('electron-updater')
+// const { NsisUpdater } = require('electron-updater')
 const { app, BrowserWindow } = require('electron')
 
 
@@ -12,14 +12,14 @@ function createWindow () {
 }
 
 app.whenReady().then(() => {
-     const options = {
-     }
+    //  const options = {
+    //  }
   
-     if (process.platform === "win32") {
-         autoUpdater = new NsisUpdater(options)
-     }
+    //  if (process.platform === "win32") {
+    //      autoUpdater = new NsisUpdater(options)
+    //  }
 
-     autoUpdater.checkForUpdatesAndNotify()
+    //  autoUpdater.checkForUpdatesAndNotify()
 
   createWindow()
 })
