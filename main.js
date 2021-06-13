@@ -45,7 +45,8 @@ autoUpdater.on('update-downloaded', function (info) {
     }, 1000);
 });
 
-autoUpdater.checkForUpdates();
+// autoUpdater.checkForUpdates();
+autoUpdater.checkForUpdatesAndNotify();
 
 function sendStatusToWindow(message) {
     console.log(message);
