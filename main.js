@@ -54,6 +54,9 @@ function sendStatusToWindow(message) {
 
 
 
+
+
+
 function createWindow () {
   const win = new BrowserWindow({
     width: 800,
