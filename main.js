@@ -2,7 +2,7 @@ const { app, BrowserWindow } = require('electron')
 const updater = require("electron-updater");
 const autoUpdater = updater.autoUpdater;
 
-autoUpdater.autoDownload = false;
+autoUpdater.autoDownload = true;
 // autoUpdater.allowDowngrade = true;
 
 autoUpdater.setFeedURL({
@@ -17,7 +17,7 @@ autoUpdater.on('checking-for-update', function () {
 });
 
 autoUpdater.on('update-available', function (info) {
-    sendStatusToWindow('Update available.');
+  sendStatusToWindow('Update available.');
 });
 
 autoUpdater.on('update-not-available', function (info) {
@@ -50,7 +50,6 @@ autoUpdater.checkForUpdates();
 function sendStatusToWindow(message) {
     console.log(message);
 }
-
 
 
 
