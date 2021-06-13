@@ -1,12 +1,12 @@
 {
   "name": "eletron-test",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This is a test application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder --publish always"
+    "dist": "electron-builder"
   },
   "author": "Paris Nakita Kejser",
   "license": "ISC",
